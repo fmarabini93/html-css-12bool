@@ -1,47 +1,39 @@
 /* Debug */
-.container {
-    height: calc((100vh / 5) - 0.5px);
-    width: 60%;
-}
-
 [class*="col-"] {
-    height: 100%;
-    line-height: calc(100vh / 5);
-    vertical-align: middle;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    padding: 2px;
     border: 1px solid #000000;
     background-color: #ffc0cb;
 }
-
-.col-6 > .container {
-    width: 100%;
-}
-.col-6 > .container div {
-    height: calc(100% - 6px);
+.nested {
+    height: 196px;
     border: 1px solid #ffffff;
     background-color: #f07f80;
 }
 /* --Debug */
 
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .container {
+    max-width: 1170px;
     margin: 0 auto;
 }
 .container::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
 }
 
 [class*="col-"] {
     float: left;
-    padding: 2px;
 }
+
 .col-1 {
     width: calc(100% / 12);
 }
